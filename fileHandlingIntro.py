@@ -14,4 +14,8 @@ What is file handling:
 fileObj=open('names.txt',mode='r')
 if fileObj:
     print('File opend successfully')
+fileHandler=open('names.txt',mode='r',buffering=10,encoding='utf-8')
+if fileHandler:
+    print('names files is opened')
+    print(fileHandler)
 
