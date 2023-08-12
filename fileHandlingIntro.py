@@ -18,4 +18,8 @@ fileHandler=open('names.txt',mode='r',buffering=10,encoding='utf-8')
 if fileHandler:
     print('names files is opened')
     print(fileHandler)
+'''
+Buffer: protiti file er buffer value set korar jonno buffer use 
+kora hoy. Buffer value sobsomoy integer hoy.
+'''
 
