@@ -26,5 +26,8 @@ file.
 Errors: errors represents how encoding and decoding errors are to be 
 handled.
 Newline: It can be /n,/r,/n/r
+FileObjectVariable=> name, mode, closed ,encoding
+syntex: fileObject.variableName
+
 '''
 
