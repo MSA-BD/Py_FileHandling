@@ -9,4 +9,9 @@ elif fileObject.mode=='r':
     print('File are only readable')
 else:
     print('Fole are only writable')
-fileObject.close()
+
+#short method
+isReadable=fileObject.readable()
+print(isReadable) #False
+isWritable=fileObject.writable()
+print(isWritable) #True
