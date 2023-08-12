@@ -21,5 +21,6 @@ if fileHandler:
 '''
 Buffer: protiti file er buffer value set korar jonno buffer use 
 kora hoy. Buffer value sobsomoy integer hoy.
+Encoding: Encoding are used to set encoding and decoding type.
 '''
 
