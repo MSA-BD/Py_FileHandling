@@ -21,6 +21,10 @@ if fileHandler:
 '''
 Buffer: protiti file er buffer value set korar jonno buffer use 
 kora hoy. Buffer value sobsomoy integer hoy.
-Encoding: Encoding are used to set encoding and decoding type.
+Encoding: Encoding are used to set encoding and decoding type of a 
+file.
+Errors: errors represents how encoding and decoding errors are to be 
+handled.
+Newline: It can be /n,/r,/n/r
 '''
 
