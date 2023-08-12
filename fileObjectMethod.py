@@ -28,3 +28,17 @@ if isFile:
     fileObject.close()
 else:
     print('file does not exist')
+
+#ways of closing file
+'''
+exception style: try:
+           fileObj=open(fileName/path, mode, buffering, encoding)
+           more operations
+           
+           finally:
+           fileObj.close()
+
+with satement style: with open(fileName/path, mode) as fileObj:
+                      operations on fileObj
+                          
+'''
