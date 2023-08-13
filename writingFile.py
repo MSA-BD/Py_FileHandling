@@ -27,16 +27,28 @@ start hoy.
 #     print(f"Write {writeChars} chars in {newFile.name}")
 
 # writelines() method
-lines=open('para.txt',mode='r').readlines()
+# lines=open('para.txt',mode='r').readlines()
 # for line in lines:
 #     print(line) //We should stop CNG vehicle permession/n
-newFile=open(input('Enter writelines filename: '), mode='w')
-totalWriteLine=0
+# newFile=open(input('Enter writelines filename: '), mode='w')
+# totalWriteLine=0
 # for line in lines:
 #     newFile.writelines(line)
 #     totalWriteLine+=1
 # print(totalWriteLine)
 
+#file write in x mode
+'''mode='x' e file write korle file zodi exist kore tahole 
+existFileError return kore.
+file write hoy na.
+'''
+def writeFile():
+    try:
+        fileHand=open(input('Enter filename:'),mode='x')
+        fileHand.write(input('Write file content: '))
+    except FileExistsError as error:
+        print(error)
+writeFile()
 
 
 
