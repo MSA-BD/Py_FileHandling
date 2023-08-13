@@ -8,12 +8,12 @@ char and koto line write kora hoyche ta return kore.
 write() and writelines() method e cursor pointer 0 index theke
 start hoy.
 '''
-# newFile=open(input('Enter your new filename: '),mode='w')
-# try:
-#     if newFile:
-#         chars=newFile.write(input('Enter file content: '))
-#         print(chars)
-#     else:
-#         print('File does not create')
-# finally:
-#     newFile.close()
+newFile=open(input('Enter your new filename: '),mode='w')
+try:
+    if newFile:
+        chars=newFile.write(input('Enter file content: '))
+        print(chars)
+    else:
+        print('File does not create')
+finally:
+    newFile.close()
