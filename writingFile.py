@@ -32,10 +32,10 @@ lines=open('para.txt',mode='r').readlines()
 #     print(line) //We should stop CNG vehicle permession/n
 newFile=open(input('Enter writelines filename: '), mode='w')
 totalWriteLine=0
-for line in lines:
-    newFile.writelines(line)
-    totalWriteLine+=1
-print(totalWriteLine)
+# for line in lines:
+#     newFile.writelines(line)
+#     totalWriteLine+=1
+# print(totalWriteLine)
 
 
 
