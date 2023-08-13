@@ -8,12 +8,22 @@ char and koto line write kora hoyche ta return kore.
 write() and writelines() method e cursor pointer 0 index theke
 start hoy.
 '''
-newFile=open(input('Enter your new filename: '),mode='w')
-try:
-    if newFile:
-        chars=newFile.write(input('Enter file content: '))
-        print(chars)
-    else:
-        print('File does not create')
-finally:
-    newFile.close()
+# newFile=open(input('Enter your new filename: '),mode='w')
+# try:
+#     if newFile:
+#         chars=newFile.write(input('Enter file content: '))
+#         print(chars)
+#     else:
+#         print('File does not create')
+# finally:
+#     newFile.close()
+
+#copying existing file on a new file
+existFile=open('para.txt',mode='r')
+newFile=open(input('Enter new filename: '),mode='w')
+data=existFile.readlines()
+for line in data:
+    writeChars=newFile.write(line)
+    print(f"Write {writeChars} chars in {newFile.name}")
+
+
