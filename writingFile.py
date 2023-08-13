@@ -19,11 +19,24 @@ start hoy.
 #     newFile.close()
 
 #copying existing file on a new file
-existFile=open('para.txt',mode='r')
-newFile=open(input('Enter new filename: '),mode='w')
-data=existFile.readlines()
-for line in data:
-    writeChars=newFile.write(line)
-    print(f"Write {writeChars} chars in {newFile.name}")
+# existFile=open('para.txt',mode='r')
+# newFile=open(input('Enter new filename: '),mode='w')
+# data=existFile.readlines()
+# for line in data:
+#     writeChars=newFile.write(line)
+#     print(f"Write {writeChars} chars in {newFile.name}")
+
+# writelines() method
+lines=open('para.txt',mode='r').readlines()
+# for line in lines:
+#     print(line) //We should stop CNG vehicle permession/n
+newFile=open(input('Enter writelines filename: '), mode='w')
+totalWriteLine=0
+for line in lines:
+    newFile.writelines(line)
+    totalWriteLine+=1
+print(totalWriteLine)
+
+
 
 
