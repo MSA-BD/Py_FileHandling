@@ -7,6 +7,8 @@ deya lage na.
 read(char) method /n char hisabe gononay dhore.
 '''
 fileObj=open('names.txt',mode='r')
+for data in fileObj:
+    print('print fileobj by loop: ',data,end='')
 
 try:
     if fileObj:
@@ -27,8 +29,8 @@ print(data4)
 # fileHandler.close()
 
 #readlines() method
-# # readlines() method sobgulu line
-# datas=fileHandler.readlines()
-# for data in datas:
-#     print(data)
-# fileHandler.close()
+# readlines() method protiti line er list return kore
+datas=fileHandler.readlines()
+for data in datas:
+    print(data,end='')
+fileHandler.close()
