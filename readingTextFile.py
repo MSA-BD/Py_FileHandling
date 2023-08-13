@@ -17,3 +17,18 @@ try:
 finally:
     fileObj.close()
     print('file closed')
+
+#readline() method
+fileHandler=open('names.txt',mode='r')
+data3=fileHandler.readline(3)
+print(data3,end='')
+data4=fileHandler.readline(2)
+print(data4)
+# fileHandler.close()
+
+#readlines() method
+# # readlines() method sobgulu line
+# datas=fileHandler.readlines()
+# for data in datas:
+#     print(data)
+# fileHandler.close()
