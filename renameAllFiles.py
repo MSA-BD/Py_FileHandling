@@ -1,7 +1,7 @@
 
 import os
 '''
-files rename korar jonno 3 ti argument proyujon:
+files rename korar jonno nicer argument proyujon:
 1. folder path
 2. os.listdir(path)
 3. newname and oldname
@@ -11,7 +11,7 @@ files rename korar jonno 3 ti argument proyujon:
 folderPath=(input('Enter folder path: ')+'/').replace('\\','/')
 print(folderPath)
 def changeName():
-    i=1
+    i=0
     for filename in os.listdir(folderPath):
         oldName=folderPath+filename
         newName=folderPath+'random'+str(i)+'.png'
