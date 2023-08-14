@@ -44,7 +44,7 @@ def  addFilesToMerged():
            if addMore!='y':
              break
        else:
-           raise FileExistsError('Last typed file does not exist!')
+           print('Last typed file does not exist!')
            addMore = input('Do you want to add more?(y/n): ')
            if addMore != 'y':
                break
