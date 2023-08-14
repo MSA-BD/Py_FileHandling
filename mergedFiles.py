@@ -33,7 +33,6 @@ from os import path
 #         #         break
 
 existFiles=[]
-mergedFilesData=''
 def  addFilesToMerged():
    while True:
        addFileName=input('Enter filename to merged: ')+'.txt'
@@ -44,6 +43,7 @@ def  addFilesToMerged():
            if addMore!='y':
              break
        else:
+           # ekahne error rasise korte hobe
            print('Last typed file does not exist!')
            addMore = input('Do you want to add more?(y/n): ')
            if addMore != 'y':
@@ -51,5 +51,25 @@ def  addFilesToMerged():
            else:
                continue
 
+
+def readDataByLoop(files):
+    mergedFilesData=''
+    for file in files:
+        fileObj=open(file,mode='r',encoding='utf-8')
+        data=fileObj.read()+'/n'
+        mergedFilesData=mergedFilesData+data
+        fileObj.close()
+    return mergedFilesData
+
+def writeAllDataInAFile(mergedFilesData):
+    fileObj=open(input('Enter team file name: ')+'.txt',mode='x',
+                 encoding='utf-8')
+    totalWrite=fileObj.write(mergedFilesData)
+    print(f"Total write {totalWrite} charechter in {fileObj.name} "
+          f"file")
+    fileObj.close()
+
 addFilesToMerged()
+allData=readDataByLoop(existFiles)
+writeAllDataInAFile(allData)
 print(existFiles)
